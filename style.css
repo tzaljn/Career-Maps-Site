@@ -1,0 +1,413 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+                        /* CAREER MAPS PAGE */
+
+/* Background color of website */
+.careerPage{
+  background-color:white;
+}
+
+/* Page's title */
+.careerTitle{
+  font-family: "Oswald", sans-serif;
+  font-size:70px;
+  
+  color:#ecccff;
+  text-align:center;
+  
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  /* The atag distributes the css asides from flexbox */
+  .atag{
+    background-color:#764A9E;
+    border:#E0C0FF solid 5px;
+    border-radius:40px;
+
+    padding-bottom:5px;
+    padding-left:30px;
+    padding-right:30px;
+
+    margin-top:40px;
+  }
+}
+
+/* Hover effect: change brightness of the title  */
+.careerTitle:hover{
+  opacity:90%;
+}
+
+
+/* The heading with typewriter effect beneath the title */
+.careerInfo{
+  font-family: "Montserrat", sans-serif;
+  font-size:25px;
+  display:flex;
+  justify-content:center;
+
+  border:#764A9E solid 3px;
+  border-left:none;
+  border-right:none;
+
+  margin-top:25px;
+  margin-bottom:25px;
+  margin-left:50px;
+  margin-right:50px;
+
+  padding:15px;
+}
+
+/* The steps of instruction below the heading */
+p.instruction{
+  font-family: "Montserrat", sans-serif;
+  font-size:20px;
+  
+  margin-top:15px;
+  margin-bottom:15px;
+  margin-left:50px;
+  margin-right:50px;
+  
+}
+
+/* Editing spacing of the 2 columns about interest areas */
+.wholeColumn{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:flex-start;
+
+  margin-left:50px;
+  margin-right:50px;
+  margin-top:50px;
+  margin-bottom:25px;
+}
+
+/* The heading of the 6 interest areas' definition box */
+.heading2{
+  font-family: "Montserrat", sans-serif;
+  font-size:20px;
+  text-align:center;
+
+  background-color:#ae7acc;
+  /* border:#E0C0FF dashed 4px; */
+  border-radius:25px;
+
+  padding:15px;
+  margin-left:100px;
+  margin-right:100px;
+  margin-top:0px;
+  margin-bottom:0px;
+
+}
+
+/* Sub-column splits the 6 areas into 3 by each side */
+.subColumn{
+  font-family: "Montserrat", sans-serif;
+  background-color:#E0C0FF;
+  /* border:#AE7ACC dashed 4px; */
+  border-radius:25px;
+  
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+
+  margin-left:100px;
+  margin-right:100px;
+  margin-top:0px;
+  margin-bottom:0px;
+
+  padding-top:10px;
+  padding-left:30px;
+  padding-right:30px;
+  padding-bottom:10px;
+  
+  /* Styling the p tag inside the interest areas' definition box */
+  .subLeftColumn{
+    font-size:18px;
+    padding:10px;
+  }
+  .subRightColumn{
+    font-size:18px;
+    padding:10px;
+  }
+}
+
+/* THE LEFT BOX THAT INTRODUCES AN ANSWER TO WHAT IS AN INTEREST AREA */
+.leftColumn{
+  font-family: "Montserrat", sans-serif;
+  background-color:#E0C0FF;
+  color:#280036;
+  border:#AE7ACC dotted 5px;
+  border-radius:25px;
+
+  margin:25px;
+  padding:20px;
+
+  /* This split the boxes evenly  */
+  width: 50%;
+}
+
+
+/* THE RIGHT BOX OF SELECTION BAR THAT MAPS INTEREST AREAS TO CAREER FIELDS */
+.rightColumn{
+  font-family: "Montserrat", sans-serif;
+  background-color:#AE7ACC;
+  border: #E0C0FF dotted 5px;
+  border-radius:25px;
+
+  margin:25px;
+  padding:20px;
+
+  /* This split the boxes evenly  */
+  width: 50%;
+}
+
+
+/* Selection bar for interest areas */
+form{
+  display:flex;
+  flex-direction:column;
+  
+  /* p tag is the instructional heading  */
+  p{
+    font-family: "Montserrat", sans-serif;
+    font-size:20px;
+    color:#280036;
+
+    margin-top:10px;
+    margin-bottom:25px;
+  }
+  
+  /* class field is the bar displays different options of interest areas */
+  .field{
+    font-size:18px;
+    
+    padding:5px;
+  }
+
+  /* class fiedlBtton is the submit button to trigger a suggestion for a career field */
+  .fieldBttn{
+    font-size:18px;
+    background-color:#E0C0FF;
+    border: #BC94E2 solid 3px;
+    border-radius:25px;
+
+    padding:7px;
+    opacity:80%;
+  }
+  /* Hover effect: have full brightness of the submit button */
+  .fieldBttn:hover{
+    opacity:100%;
+  }
+}
+
+/* This is the output--career fields that will be suggested by the selection bar */
+.areaContainer{
+  font-family: "Montserrat", sans-serif;
+  font-size:18px;
+  
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
+  margin-top:25px;
+  margin-left:5px;
+}
+
+
+/* Row 1: the blocks of Science and Tech  */
+section.row1{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+
+  margin-top:70px;
+}
+
+/* Row 2: the blocks of Engineering and Math */
+section.row2{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+
+/* Blocks of sub-fields in the SCIENCE branch: styling title and the box, excluding the sub-branch */
+div.scienceCareers{
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size:25px;
+  color:#280036;
+  background-color:#AE7ACC;
+  border:#BC94E2 solid 7px;
+  border-radius:25%;
+  
+  width:250px;
+  opacity:90%;
+  margin:50px;
+}
+  /* Hover effect of science sub-fields box */
+div.scienceCareers:hover{
+  opacity:100%;
+  
+  transform: scale(1.2);
+  transition:1s;
+}
+
+/* Blocks of sub-fields in the TECH branch: styling title and the box, excluding the sub-branch */
+div.techCareers{
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size:25px;
+  color:#280036;
+  background-color:#BC94E2;
+  border:#E0C0FF solid 7px;
+  border-radius:25%;
+
+  width:250px;
+  opacity:90%;
+  margin:50px;
+}
+  /* Hover effect of tech sub-fields box */
+div.techCareers:hover{
+  opacity:100%;
+  
+  transform: scale(1.2);
+  transition:1s;
+}
+
+/* Blocks of sub-fields in the ENGINEERING branch: styling title and the box, excluding the sub-branch */
+div.engineeringCareers{
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size:25px;
+  color:#280036;
+  background-color:#BC94E2;
+  border:#E0C0FF solid 7px;
+  border-radius:25%;
+
+  width:250px;
+  opacity:90%;
+  margin:50px;
+}
+  /* Hover effect of engineering sub-fields box */
+div.engineeringCareers:hover{
+  opacity:100%;
+  
+  transform: scale(1.2);
+  transition:1s;
+}
+
+/* Blocks of sub-fields in the MATH branch: styling title and the box, excluding the sub-branch */
+div.mathCareers{
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size:25px;
+  color:#280036;
+  background-color:#BC94E2;
+  border:#AE7ACC solid 7px;
+  border-radius:25%;
+
+  width:260px;
+  opacity:90%;
+  margin:50px;
+
+  h3{
+    display:flex;
+    justify-content:center;
+  }
+}
+  /* Hover effect of math sub-fields box */
+div.mathCareers:hover{
+  opacity:100%;
+  
+  transform: scale(1.2);
+  transition:1s;
+}
+
+
+/* Styling each sub-branch's line of text inside the 4 main fields */
+a.subbranches{
+  font-family: "Montserrat", sans-serif;
+
+  color:black;
+  font-size:20px;
+  display:flex;
+  justify-content:center;
+  text-decoration:none;
+  
+  margin-top:10px;
+  margin-bottom:15px;
+}
+/* Hover effect: changing the color of sub-branch line when being hovered over */
+a.subbranches:hover{
+  color:purple;
+}
+
+/* Styling the heading of each sub-branch's card  */
+h2.branchHeading{
+  color:#280036;
+  background-color:#BC94E2;
+  font-family: "Oswald", sans-serif;
+  border-radius:40px;
+  text-align:center;
+  font-size:30px;
+  padding:10px;
+  
+  margin-top:70px;
+  margin-bottom:0px;
+}
+
+/* Styling the main part of each sub-branch's card: image, skillset, & occupations */
+.stemSection{
+  margin-left:100px;
+  margin-right:100px;
+  
+  /* Styling image inside each card */
+  .subBranchImg{
+    width:200px;
+    height:200px;
+    border:#BC94E2 solid 5px;
+    border-radius:15%;
+    margin:20px;
+  }
+
+  /* Sub-section applies flexbox to split image asides from the skillset and occupations into 2 evenly spaced columns  */
+  .subsection{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+  }
+
+  /* Sub-section 2 applies flexbox to split the skillset and occupations into 2 evenly spaced rows  */
+  .subsection2{
+    font-family: "Montserrat", sans-serif;    
+    font-size:20px;
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column;
+    /* Editing the spacing of occupation */
+    .occupation{
+      margin:5px;
+    }
+    /* Editing the spacing of skillset */
+    .skillset{
+      margin:5px;
+      padding-top:20px;
+    }
+  }
+  background-color:#AE7ACC;
+  border-radius:40px;
+} 
+
+/* Mulberry Links footer */
+.programFooter{
+  font-family: "Montserrat", sans-serif;    
+  font-size:15px;
+  text-align:center;
+
+  margin:30px;
+  padding:5px;
+}
+                         /* END OF CAREER MAPS PAGE  */
