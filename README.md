@@ -1,2 +1,3 @@
 # Career-Maps-Site
-Interactive STEM career matching site developed in HTML/CSS/JavaScript.
+Aimed to introduce a variety of STEM careers through occupational interest areas, incorporated by matchmaking purposes and informative learning experience. Used HTML/CSS/Javascript; part of a group-developed project called Mulberry Links.
+
