@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body class="careerPage" onload = typeWriter()>
+
+              <!-- Career Page's title and heading -->
+  <h1 class="careerTitle"><a class="atag"> Career Maps</a></h1>
+  <p id = "captionHeader" class="careerInfo"> </p>
+  <!-- Explore different occupational titles within the realms of science, technology, engineering, and math. Map your interest areas to a potential career field! -->
+  
+  <p class="instruction"><strong>Step 1</strong>: Learn about 6 common areas of interest on the left, then hover to the selection tab on the right to be mapped with a potential career field.</p>
+  <p class="instruction"><strong>Step 2</strong>: Scroll down to the blocks of the 4 main STEM branches, then click on a sub-branch field beneath in accordance to the one that was suggested by the selection bar, hereby you will get to learn about certain occupations in STEM!</p>
+  
+  <!-- Generate occupations by Interest Areas -->
+  <section class="wholeColumn">
+    
+    <!-- Left column displays definition of interest areas  -->
+    <section class="leftColumn">
+      <h4 class="heading1"><strong>What is an <em>interest area</em>?</strong></h4>
+      <p>: a group of related academic programs that assists students in <u>mapping a structured path</u> to reach their <i>educational</i> & <i>career</i> goals, as well as facilitating them to <u>network with peers</u> who have a like-minded mindset that shared similar interests to theirs</p>
+    </section>
+
+    
+    <!-- Right column displays the areas of interest  -->
+    <section class="rightColumn">
+      <form>
+        <p><strong>Select one of the areas of interest below, then click submit:</strong></p>
+        <select class="field" class="column2" type="text">
+          <option>*Choose an interest area*</option>
+          <option>Realistic</option>
+          <option>Investigative</option>
+          <option>Artistic</option>
+          <option>Social</option>
+          <option>Enterprising</option>
+          <option>Conventional</option>
+        </select>
+        <input class="fieldBttn" class="column2" type="submit">
+      </form>
+
+
+      <div class="areaContainer">
+        <!--This is my empty container that I will append the suggestion for career fields into -->
+      </div> 
+    </section>
+    
+  </section>
+
+  <h4 class="heading2">The 6 Interest Areas (RIASEC)</h4>
+  <section class="subColumn">
+    <section class="subLeftColumn">
+      <p>1. <b>Realistic</b>: enjoy practical, hands-on work, such as designing/building something, repairing equipment, physical activity, or working outdoors</p>
+      <p>2. <b>Investigate</b>: searching for facts and solving problems; enjoy work that involves studying or researching, such as in a lab</p>
+      <p>3. <b>Artistic</b>: expressing through creative, original work; enjoy making visual art, performing, writing or designing something</p>
+    </section>
+
+    <section class="subRightColumn">
+      <p>4. <b>Social</b>: working with others to be learned and growed; enjoy teaching, giving advice, or physically caring for others</p>
+      <p>5. <b>Enterprising</b>: starting and managing business projects; enjoy leading or advising people, selling or marketing products, and conducting negotiations</p>
+      <p>6. <b>Conventional</b>: enjoy work that involves organizing information, often in an office setting; like projects that follow set procedures and regulations</p>
+    </section>
+
+  </section>
+
+  
+
+         <!-- Row 1: the blocks of Science and Tech  -->
+  <section class="row1">
+    <!-- Science and its sub-branches -->
+    <div class="scienceCareers">
+      <h3>Science</h3>
+      <a href="#physicsSection" class="subbranches">Physics</a>
+      <a href="#biologySection" class="subbranches">Biology</a>
+      <a href="#chemistrySection" class="subbranches">Chemistry</a>
+      <a href="#astronomySection" class="subbranches">Astronomy</a>
+    </div>
+
+    <!-- Tech and its sub-branches -->
+    <div class="techCareers">
+      <h3>Technology</h3>
+      <a href="#datasciSection" class="subbranches">Data Science</a>
+      <a href="#biotechSection" class="subbranches">Biotechnology</a>
+      <a href="#nanotechSection" class="subbranches">Nanotechnology</a>
+      <a href="#compsciSection" class="subbranches">Computer Science</a>
+    </div>
+  </section>
+
+         <!-- Row 2: the blocks of Engineering and Math -->
+  <section class="row2">
+    <!-- Engineering and its sub-branches -->
+    <div class="engineeringCareers">
+      <h3>Engineering</h3>
+      <a href="#civilSection" class="subbranches">Civil Engineering</a>
+      <a href="#electricalSection" class="subbranches">Electrical Engineering</a>
+      <a href="#computerSection" class="subbranches">Computer Engineering</a>
+      <a href="#mechSection" class="subbranches">Mechanical Engineering</a>
+    </div>
+
+    <!-- Math and its sub-branches -->
+    <div class="mathCareers">
+      <h3>Math</h3>
+      <a href="#statsSection" class="subbranches">Statistics</a>
+      <a href="#propSection" class="subbranches">Probability</a>
+      <a href="#appliedmathSection" class="subbranches">Applied Math</a>
+      <a href="#compmathSection" class="subbranches">Computational Math</a>
+    </div>
+  </section>
+
+  
+                  <!-- Science: Physics Sub-Section -->
+  <div class="stemSection" id="physicsSection">
+    <h2 class="branchHeading">Science: <em>Physics</em></h2>
+
+    <section class="subsection">
+      <img src="careersImages/physics.jpeg" class="subBranchImg" alt="Physics Img">
+
+      <section class="subsection2">
+        <p class="skillset"><strong>Skills: </strong> logical, problem-solving, resilience</p>
+        <p class="occupation"><strong>Occupations </strong></p>
+        <p class="occupation">• Chemical Engineer</p>
+        <p class="occupation">• Nanosystems Engineer</p>
+        <p class="occupation">• Geoscientist </p>
+        <p class="occupation">• Astrophysicist </p>
+      </section>
+    </section>
+  </div>
+
+            <!-- Technology: Data Science Sub-Section -->
+  <div class="stemSection" class="investigate" id="datasciSection">
+    <h2 class="branchHeading">Technology: <em>Data Science</em></h2>
+    
+    <section class="subsection">
+      <img src="careersImages/datasci.jpeg" class="subBranchImg" alt="Data Science Img">
+
+      <section class="subsection2">
+        <p class="skillset"><strong>Skills: </strong> analysis, logical, organization</p>
+        <p class="occupation"><strong>Occupations </strong></p>
+        <p class="occupation">• Data Scientist</p>
+        <p class="occupation">• Computer Systems Analyst</p>
+        <p class="occupation">• Database Administrator </p>
+        <p class="occupation">• Database Architect </p>
+      </section>
+    </section>
+  </div>
+
+            <!-- Engineering: Civil Sub-Section -->
+  <div class="stemSection" id="civilSection">
+    <h2 class="branchHeading">Engineering: <em>Civil Engineering</em></h2>
+
+    <section class="subsection">
+      <img src="careersImages/civil.jpeg" class="subBranchImg" alt="Civil Engineering Img">
+
+      <section class="subsection2">
+        <p class="skillset"><strong>Skills: </strong> communication, organization, problem-solving</p>
+        <p class="occupation"><strong>Occupations </strong></p>
+        <p class="occupation">• Civil Engineer</p>
+        <p class="occupation">• Civil Engineering Technician</p>
+        <p class="occupation">• Architectural and Civil Drafter </p>
+        <p class="occupation">• Architectural and Civil Manager </p>
+      </section>
+    </section>
+  </div>
+
+            <!-- Math: Stats Sub-Section -->
+  <div class="stemSection" id="statsSection">
+    <h2 class="branchHeading">Math: <em>Statistics</em></h2>
+
+    <section class="subsection">
+      <img src="careersImages/stats.jpeg" class="subBranchImg" alt="Statistics Img">
+
+      <section class="subsection2">
+        <p class="skillset"><strong>Skills: </strong> analysis, critical-thinking, problem-solving</p>
+        <p class="occupation"><strong>Occupations </strong></p>
+        <p class="occupation">• Statisticians</p>
+        <p class="occupation">• Postsecondary Mathematical Science Teachers</p>
+        <p class="occupation">• Sales Manager </p>
+        <p class="occupation">• Clinical Data Manager </p>
+      </section>
+    </section>
+  </div>
+  
+                        <!-- webFooter -->
+  <footer class="programFooter">
+    <p>&copy; Mulberry Links 2024</p>
+  </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+
+</html>
