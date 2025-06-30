@@ -364,21 +364,21 @@ h2.branchHeading{
   margin-left:100px;
   margin-right:100px;
   
-  /* Styling image inside each card */
-  .subBranchImg{
-    width:200px;
-    height:200px;
-    border:#BC94E2 solid 5px;
-    border-radius:15%;
-    margin:20px;
-  }
+/* Styling image inside each card */
+.subBranchImg{
+  width:200px;
+  height:200px;
+  border:#BC94E2 solid 5px;
+  border-radius:15%;
+  margin:20px;
+}
 
   /* Sub-section applies flexbox to split image asides from the skillset and occupations into 2 evenly spaced columns  */
-  .subsection{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-  }
+.subsection{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
 
   /* Sub-section 2 applies flexbox to split the skillset and occupations into 2 evenly spaced rows  */
   .subsection2{
