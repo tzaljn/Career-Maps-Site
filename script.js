@@ -1,11 +1,11 @@
 // Career Maps Selection Bar
 var areasList = {
-  Realistic: "Matching fields: Physics, Civil Engineering",
-  Investigative: "Matching fields: Physics, Civil Engineering",
-  Artistic: "Matching fields: Computer Science, Civil Engineering",
-  Social: "Matching fields: Physics, Civil Engineering",
-  Enterprising: "Matching fields: Computer Science, Computer Engineering",
-  Conventional: "Matching fields: Statistics, Data Science",
+  Realistic: "<b>Matching fields:</b> Physics, Civil Engineering",
+  Investigative: "<b>Matching fields:</b> Biology, Computer Science",
+  Artistic: "<b>Matching fields:</b> Computer Science, Civil Engineering",
+  Social: "<b>Matching fields:</b> Statistics, Civil Engineering",
+  Enterprising: "<b>Matching fields:</b> Chemistry, Electrical Engineering",
+  Conventional: "<b>Matching fields:</b> Statistics, Data Science",
 } 
 
   // text input
@@ -30,10 +30,9 @@ function displayField(event){
   interestAreaContainer.append(`<p>`+ areasList[interestArea] + `</p>`)
 }
 
-
   // Typewriter effect for heading
 var i = 0;
-var text = "Explore different occupational titles within the realms of science, technology, engineering, and math. Map your interest areas to a potential career field!";
+var text = "Explore different occupational titles within the realms of science, technology, engineering, and math. \nMap your interest areas to a potential career field!";
 var speed = 50;
 function typeWriter(){
   if(i<text.length){
@@ -41,3 +40,5 @@ function typeWriter(){
     setTimeout(typeWriter, speed);
   }
 }
+
+
